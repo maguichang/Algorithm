@@ -68,7 +68,13 @@
    - F1-score
 ## 支持向量机SVM(support vector machine)
 - 直观理解，SVM就是间隔最大化分类
-svm文档链接 https://www.jianshu.com/p/341c5edd85f5
+
+svm文档链接 
+
+https://blog.csdn.net/weixin_39605679/article/details/81170300
+
+https://www.jianshu.com/p/341c5edd85f5
+
 - 由于svm算法中应用到距离最大化的计算，故数据预处理需要进行标准化
 - svm的推导原理设计，涉及最优化带有约束条件的最值函数问题，拉格朗日函数与对偶问题，KKT条件，序列最小最优化算法SMO
 
