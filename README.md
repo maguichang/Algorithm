@@ -74,3 +74,4 @@ svm文档链接 https://www.jianshu.com/p/341c5edd85f5
 
 ### 高斯核函数也称RBF核(Radial Basis Function Kernel)
 - 核心思想，将每一个样本点映射到一个无穷维的特征空间，依靠升维使得原本线性不可分的数据线性可分
+- RBF 中的gamma参数越大越容易过拟合，gamma越小越容易欠拟合
