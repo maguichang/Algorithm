@@ -1,12 +1,13 @@
 # 决策树（说明文档）
 
-'''
-scikit-learn中有两类决策树，它们均采用优化的CART决策树算法。
-'''
+
+*scikit-learn中有两类决策树，它们均采用优化的CART决策树算法。*
+```
 from sklearn.tree import DecisionTreeRegressor
-'''
-回归决策树
-'''
+```
+
+- 回归决策树
+```
 DecisionTreeRegressor(criterion="mse",
                          splitter="best",
                          max_depth=None,
@@ -19,7 +20,7 @@ DecisionTreeRegressor(criterion="mse",
                          min_impurity_decrease=0.,
                          min_impurity_split=None,
                          presort=False)
-'''
+
 参数含义：
 1.criterion:string, optional (default="mse")
             它指定了切分质量的评价准则。默认为'mse'(mean squared error)。
@@ -87,12 +88,12 @@ Notes：
 方法：
 1.fit(X,y):训练模型。
 2.predict(X):预测。
-'''
+```
  
+``` 
 from sklearn.tree import DecisionTreeClassifier
-'''
-分类决策树
-'''
+- 分类决策树
+
 DecisionTreeClassifier(criterion="gini",
                  splitter="best",
                  max_depth=None,
@@ -106,7 +107,7 @@ DecisionTreeClassifier(criterion="gini",
                  min_impurity_split=None,
                  class_weight=None,
                  presort=False)
-'''
+
 参数含义：
 1.criterion:string, optional (default="gini")
             (1).criterion='gini',分裂节点时评价准则是Gini指数。
@@ -182,5 +183,5 @@ DecisionTreeClassifier(criterion="gini",
 2.predict(X):预测
 3.predict_log_poba(X):预测X为各个类别的概率对数值。
 4.predict_proba(X):预测X为各个类别的概率值。
-'''
+```
 
