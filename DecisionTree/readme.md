@@ -89,10 +89,11 @@ Notes：
 1.fit(X,y):训练模型。
 2.predict(X):预测。
 ```
- 
+
+- 分类决策树 
 ``` 
 from sklearn.tree import DecisionTreeClassifier
-- 分类决策树
+
 
 DecisionTreeClassifier(criterion="gini",
                  splitter="best",
