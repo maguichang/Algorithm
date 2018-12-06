@@ -191,7 +191,7 @@ if __name__ == "__main__":
     # load样本数据
     conn = pymysql.Connect(
 
-        host='10.0.7.37',
+        host='xx.xx.xx.xx',
         port=3306,
         user='maguichang',
         passwd='mgc',
@@ -202,8 +202,7 @@ if __name__ == "__main__":
     print(conn)
     print(cur)
 
-    sql = "select windfarm,turbine,faultdate,timestamputc,date(timestamputc) AS FD,trigkeynum from pmc \
-    where trigkeynum regexp '^SC'"
+    sql = "select windfarm,turbine,faultdate,timestamputc,date(timestamputc) AS FD,trigkeynum from pmc where trigkeynum regexp '^SC'"
     cur.execute(sql)
     result = cur.fetchall()
     result = pd.DataFrame(list(result))
