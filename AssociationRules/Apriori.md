@@ -31,3 +31,10 @@ Apriori算法使用一种称为逐层搜索的迭代方法，其中k项集用于
     提升度表示含有X的条件下，同时含有Y的概率，与不含X的条件下却含Y的概率之比。
 
                Lift(X→Y) = P(Y|X) / P(Y)
+- 4.全置信度（all-Confidence）
+    对于多项数据而言,即一对多的集合关系
+     all-confidence = P(XUY) / max(P(I))
+     I是XUY的集合的单项子集。
+    
+    
+
