@@ -6,4 +6,4 @@
 如何解决模型泛化的问题？
 - train_test_split
 - cross validtion交叉验证
-- L1与L2正则化，正则化的本质是在loss function中加入参数的平方和项或者绝对值和项。
+- L1与L2正则化，正则化的本质是在loss function中加入参数的平方和项（岭回归Ridge）或者绝对值和项（lasso）。
