@@ -37,7 +37,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 from sklearn.model_selection import cross_val_score
 knn_clf = KNeighborsClassifier()
-cross_val_score(knn_clf,X_train,y_train)
+cross_val_score(knn_clf,X_train,y_train)#可传入cv参数来指定交叉验证，数据分成的份数
 
 best_k, best_p, best_score = 0, 0, 0
 for k in range(2, 11):
