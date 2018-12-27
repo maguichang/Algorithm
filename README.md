@@ -66,6 +66,12 @@
    - 精准率(Precision) 在被识别为正类别的样本中，确实为正类别的比例是多少,你认为的正样本，有多少猜对了（猜的准确性如何）。
    - 召回率(Recall) 在所有正类别样本中，被正确识别为正类别的比例是多少,正样本有多少被找出来了（召回了多少）
    - F1-score
+### ROC（） 曲线的绘制与AUC 值的求取
+
+- ROC曲线：受试者工作特征曲线 （receiver operating characteristic curve），又称为感受性曲线（sensitivity curve）。ROC以假阳性率（False positive rate，1-特异度）为横轴，真阳性率（True positive rate，灵敏度）为纵轴。
+
+- ROC曲线有个很好的特性：当测试集中的正负样本的分布变化的时候，ROC曲线能够保持不变
+- AUC(Area Under Curve,曲线下面积)：即ROC下面的面积，其可以用于衡量这个分类器的优劣。面积等于0.5随机猜，AUC越大，分类器越好。
 ## 支持向量机SVM(support vector machine)
 - 直观理解，SVM就是间隔最大化分类
 
